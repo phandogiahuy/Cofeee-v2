@@ -11,7 +11,7 @@ const Main = () => {
         <Breadcrumb
           items={[
             {
-              title: <Link to={"/"}>Trang Chính</Link>,
+              title: <Link to={"/"}>Trang Chủ</Link>,
             },
             {
               title: <Link to={"/story"}>Câu Chuyện Cà Phê</Link>,

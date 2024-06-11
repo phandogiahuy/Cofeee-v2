@@ -1,16 +1,31 @@
-import { Button, Form, Input } from "antd";
+import { Breadcrumb, Button, Form, Input } from "antd";
+import { Link } from "react-router-dom";
 
-const MainContact = () => {
+const Main = () => {
   const [form] = Form.useForm();
-  const onFinish = (values) => {
+  const onFinish = (values: any) => {
     console.log("Received values:", values);
     // Xử lý logic submit tại đây
   };
   return (
     <div
       style={{ background: "url(/contact/bg.jpg)", backgroundSize: "cover" }}
-      className="h-[1000px] flex flex-col px-28 py-7 "
+      className="h-[1100px] flex flex-col px-28 py-7 "
     >
+      <div className="px-64 py-3">
+        <center className="font-bold text-2xl">Liên Hệ</center>
+        <Breadcrumb
+          items={[
+            {
+              title: <Link to={"/"}>Trang Chủ</Link>,
+            },
+            {
+              title: <p>Liên Hệ</p>,
+            },
+          ]}
+          style={{ fontSize: "20px", marginLeft: "42%" }}
+        />
+      </div>
       <div className="flex mt-4 flex-[3]">
         <div className="flex flex-col justify-around  flex-[1] ">
           <h1 className="font-semibold text-2xl">LIÊN HỆ</h1>
@@ -94,12 +109,10 @@ const MainContact = () => {
           height="450"
           style={{ border: 0 }}
           loading="lazy"
-        >
-
-        </iframe>
+        ></iframe>
       </div>
     </div>
   );
 };
 
-export default MainContact;
+export default Main;

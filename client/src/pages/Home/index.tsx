@@ -7,7 +7,7 @@ import { FloatButton } from 'antd'
 const Home = () => {
   return (
     <div className='flex flex-col' >
-      <Header/>
+      <Header id="0"/>
       <Main/>
       <Footer/>
       <FloatButton.BackTop style={{ marginBottom: "5%" }}/>

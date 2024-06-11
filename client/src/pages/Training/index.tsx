@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import Main from '../../components/Library'
+import Main from '../../components/Training'
 
-const Library = () => {
+const Training = () => {
   return (
     <div>
-    <Header id="3"/>
-    <Main/>
-    <Footer/>
+      <Header id='5'/>
+      <Main/>
+      <Footer/>
     </div>
   )
 }
 
-export default Library
+export default Training

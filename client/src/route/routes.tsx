@@ -7,6 +7,9 @@ import Roaster from "../pages/Story/Roaster";
 import Shop from "../pages/Story/Shop";
 import Contact from "../pages/Contact";
 import Library from "../pages/Library";
+import Brew from "../pages/Library/Brew";
+import Boss from "../pages/Library/Boss";
+import Training from "../pages/Training";
 
 const route = [
   {
@@ -30,12 +33,24 @@ const route = [
     element: <Shop />,
   },
   {
+    path: "/library/cach-pha",
+    element: <Brew />,
+  },
+  {
+    path: "/library/lam-chu",
+    element: <Boss />,
+  },
+  {
     path: "/contact",
     element: <Contact />,
   },
   {
     path: "/library",
     element: <Library />,
+  },
+  {
+    path: "/training",
+    element: <Training />,
   },
 ];
 const routes = route.map((e) => ({ ...e, errorElement: <ErrorPage /> }));
